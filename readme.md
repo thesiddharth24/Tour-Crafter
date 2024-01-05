@@ -20,7 +20,7 @@ The server will listen on port `3000` by default. You can also access the API at
 
 You can test with some test user-emails stored on the database like: "admin@natours.io" with a password of "test1234", or you can create a new user.
 
-You can the hosted application using: [https://natours-kunal-cc1b1e910dfe.herokuapp.com/]
+
 ## Features and Functionality
 
 The Natours project includes the following features:
