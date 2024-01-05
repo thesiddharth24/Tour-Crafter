@@ -6,7 +6,7 @@ This is a full-stack project for a fictional tour booking company called Natours
 
 To get started with the project, clone the repository to your local machine and install the dependencies:
 
-`git clone https://github.com/gkunal5802/natours.git`
+`https://github.com/thesiddharth24/Tour-Crafter.git`
 
 `npm install`
 
@@ -14,9 +14,9 @@ To start the server, run:
 
 `npm start` or `npm run dev` for development mode or `npm run start:prod` for production mode
 
-this will start the server on `http://localhost:4000`
+this will start the server on `http://localhost:3000`
 
-The server will listen on port `4000` by default. You can also access the API at `http://localhost:4000/api/v1`.
+The server will listen on port `3000` by default. You can also access the API at `http://localhost:3000/api/v1`.
 
 You can test with some test user-emails stored on the database like: "admin@natours.io" with a password of "test1234", or you can create a new user.
 
