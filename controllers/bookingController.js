@@ -21,6 +21,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
     product: product.id,
   });
 
+  //create checkout session
   const session = await stripe.checkout.sessions.create({
     cancel_url: `${req.protocol}://${req.get('host')}/tour/${tour.slug}`,
     success_url: `${req.protocol}://${req.get('host')}/my-tours`,
@@ -40,7 +41,8 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   });
 
   console.log(session);
-
+ 
+  // 3 -> Create session as response
   res.status(200).json({
     status: 'success',
     session,

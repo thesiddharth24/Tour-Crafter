@@ -2,6 +2,7 @@ const express = require('express');
 
 const viewController = require('../controllers/viewController');
 const authController = require('../controllers/authController');
+const bookingController = require('../controllers/bookingController')
 
 const Router = express.Router();
 
@@ -9,7 +10,7 @@ Router.use(viewController.alerts);
 
 Router.get(
   '/',
-  // bookingController.createBookingCheckout,
+  bookingController.createBookingCheckout, // just hide this in case of web hook 
   authController.isLoggedIn,
   viewController.getOverview
 );
